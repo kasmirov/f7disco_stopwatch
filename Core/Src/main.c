@@ -152,7 +152,7 @@ int main(void)
   MX_TIM5_Init();
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
-
+  printf("start \n");
   /* USER CODE END 2 */
 
   /* Init scheduler */

@@ -33,7 +33,8 @@ public:
     virtual void touchRightBtnClicked();
 
     virtual void timeMeasureReceived(int dir, float time);
-
+    virtual void leftPositionReached(bool state);
+    virtual void rightPositionReached(bool state);
 
 private:
     Screen1Presenter();

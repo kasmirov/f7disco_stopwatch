@@ -17,8 +17,13 @@ public:
     virtual void leftBtnClicked();
     virtual void rightBtnClicked();
 
-    virtual void textCurDirUpdated(const char* textAreaBuffer);
+    virtual void textCurDirUpdated(const char* dir);
+    virtual void textCurTimerUpdated(float time);
+    virtual void addToList(const char* dir, float time);
+
 protected:
+    static const int numberOfListElements = 20;
+    CustomContainer1 listElements[numberOfListElements];
 };
 
 #endif // SCREEN1VIEW_HPP

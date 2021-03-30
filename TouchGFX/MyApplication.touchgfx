@@ -102,13 +102,14 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
+              "TextId": "SingleUseId31",
               "UseBuffer": true,
-              "BufferSize": 3
+              "BufferSize": 4
             },
             "Name": "textCurDir",
-            "X": 46,
+            "X": 36,
             "Y": 124,
-            "Width": 40,
+            "Width": 35,
             "Height": 25,
             "Visible": true,
             "LockPosition": false,
@@ -130,11 +131,12 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
+              "TextId": "SingleUseId30",
               "UseBuffer": true,
               "BufferSize": 10
             },
             "Name": "textCurTimer",
-            "X": 71,
+            "X": 77,
             "Y": 124,
             "Width": 110,
             "Height": 25,
@@ -667,8 +669,9 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "UseBuffer": false,
-              "BufferSize": 0
+              "TextId": "SingleUseId33",
+              "UseBuffer": true,
+              "BufferSize": 6
             },
             "Name": "textNum",
             "X": 0,
@@ -695,8 +698,9 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "UseBuffer": false,
-              "BufferSize": 0
+              "TextId": "SingleUseId32",
+              "UseBuffer": true,
+              "BufferSize": 4
             },
             "Name": "textDir",
             "X": 80,
@@ -723,8 +727,9 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "UseBuffer": false,
-              "BufferSize": 0
+              "TextId": "SingleUseId34",
+              "UseBuffer": true,
+              "BufferSize": 10
             },
             "Name": "textTime",
             "X": 110,
@@ -884,6 +889,26 @@
       },
       {
         "TextEntryId": "SingleUseId29",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId30",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId31",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId32",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId33",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId34",
         "IsResource": false
       }
     ],

@@ -31,6 +31,16 @@ protected:
     touchgfx::Line line1;
     touchgfx::PainterRGB565 line1Painter;
 
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TEXTNUM_SIZE = 6;
+    touchgfx::Unicode::UnicodeChar textNumBuffer[TEXTNUM_SIZE];
+    static const uint16_t TEXTDIR_SIZE = 4;
+    touchgfx::Unicode::UnicodeChar textDirBuffer[TEXTDIR_SIZE];
+    static const uint16_t TEXTTIME_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textTimeBuffer[TEXTTIME_SIZE];
+
 private:
 
 };

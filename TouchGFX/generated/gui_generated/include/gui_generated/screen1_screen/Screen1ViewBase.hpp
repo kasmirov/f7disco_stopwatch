@@ -85,7 +85,7 @@ protected:
     /*
      * Wildcard Buffers
      */
-    static const uint16_t TEXTCURDIR_SIZE = 3;
+    static const uint16_t TEXTCURDIR_SIZE = 4;
     touchgfx::Unicode::UnicodeChar textCurDirBuffer[TEXTCURDIR_SIZE];
     static const uint16_t TEXTCURTIMER_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textCurTimerBuffer[TEXTCURTIMER_SIZE];

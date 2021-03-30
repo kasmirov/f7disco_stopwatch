@@ -43,17 +43,17 @@ Screen1ViewBase::Screen1ViewBase() :
     scrollList1.setDrawableSize(25, 0);
     scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
 
-    textCurDir.setPosition(46, 124, 40, 25);
+    textCurDir.setPosition(36, 124, 35, 25);
     textCurDir.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textCurDir.setLinespacing(0);
-    textCurDirBuffer[0] = 0;
+    Unicode::snprintf(textCurDirBuffer, TEXTCURDIR_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID31).getText());
     textCurDir.setWildcard(textCurDirBuffer);
     textCurDir.setTypedText(touchgfx::TypedText(T_SINGLEUSEID21));
 
-    textCurTimer.setPosition(71, 124, 110, 25);
+    textCurTimer.setPosition(77, 124, 110, 25);
     textCurTimer.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textCurTimer.setLinespacing(0);
-    textCurTimerBuffer[0] = 0;
+    Unicode::snprintf(textCurTimerBuffer, TEXTCURTIMER_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID30).getText());
     textCurTimer.setWildcard(textCurTimerBuffer);
     textCurTimer.setTypedText(touchgfx::TypedText(T_SINGLEUSEID7));
 

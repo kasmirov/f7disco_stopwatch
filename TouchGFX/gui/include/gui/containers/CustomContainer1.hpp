@@ -10,6 +10,7 @@ public:
     virtual ~CustomContainer1() {}
 
     virtual void initialize();
+    virtual void setupListElement(int ctr, char* dir, float time);
 protected:
 };
 

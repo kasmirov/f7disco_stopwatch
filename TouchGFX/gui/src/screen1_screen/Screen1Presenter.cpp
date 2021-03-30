@@ -43,12 +43,17 @@ void Screen1Presenter::touchRightBtnClicked()
 void Screen1Presenter::timeMeasureReceived(int dir, float time)
 {
     // Добавить реализацию отображения результата, сбора статистики, добавления в лог
-    if (dir == 0)
-    {
-        view.textCurDirUpdated("<");
-    }
-    else
-    {
-        view.textCurDirUpdated(">");
-    }
+    view.textCurDirUpdated(dir == 0 ? "<<" : ">>");
+    view.textCurTimerUpdated(time);
+    view.addToList(dir == 0 ? "<<" : ">>", time);
+}
+
+void Screen1Presenter::leftPositionReached(bool state)
+{
+
+}
+
+void Screen1Presenter::rightPositionReached(bool state)
+{
+
 }
