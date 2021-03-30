@@ -71,16 +71,40 @@ protected:
     touchgfx::TextArea textArea1_1;
     touchgfx::TextArea textArea1_2;
     touchgfx::TextArea textArea1_3;
-    touchgfx::TextArea textStatLeftMin;
-    touchgfx::TextArea textStatLeftMax;
-    touchgfx::TextArea textStatLeftMean;
-    touchgfx::TextArea textStatLeftStd;
-    touchgfx::TextArea textStatRightMin;
-    touchgfx::TextArea textStatRightMax;
-    touchgfx::TextArea textStatRightMean;
-    touchgfx::TextArea textStatRightStd;
+    touchgfx::TextAreaWithOneWildcard textStatLeftMin;
+    touchgfx::TextAreaWithOneWildcard textStatLeftMax;
+    touchgfx::TextAreaWithOneWildcard textStatLeftMean;
+    touchgfx::TextAreaWithOneWildcard textStatLeftStd;
+    touchgfx::TextAreaWithOneWildcard textStatRightMin;
+    touchgfx::TextAreaWithOneWildcard textStatRightMax;
+    touchgfx::TextAreaWithOneWildcard textStatRightMean;
+    touchgfx::TextAreaWithOneWildcard textStatRightStd;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > leftButton;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > rightButton;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TEXTCURDIR_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar textCurDirBuffer[TEXTCURDIR_SIZE];
+    static const uint16_t TEXTCURTIMER_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textCurTimerBuffer[TEXTCURTIMER_SIZE];
+    static const uint16_t TEXTSTATLEFTMIN_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStatLeftMinBuffer[TEXTSTATLEFTMIN_SIZE];
+    static const uint16_t TEXTSTATLEFTMAX_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStatLeftMaxBuffer[TEXTSTATLEFTMAX_SIZE];
+    static const uint16_t TEXTSTATLEFTMEAN_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStatLeftMeanBuffer[TEXTSTATLEFTMEAN_SIZE];
+    static const uint16_t TEXTSTATLEFTSTD_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStatLeftStdBuffer[TEXTSTATLEFTSTD_SIZE];
+    static const uint16_t TEXTSTATRIGHTMIN_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStatRightMinBuffer[TEXTSTATRIGHTMIN_SIZE];
+    static const uint16_t TEXTSTATRIGHTMAX_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStatRightMaxBuffer[TEXTSTATRIGHTMAX_SIZE];
+    static const uint16_t TEXTSTATRIGHTMEAN_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStatRightMeanBuffer[TEXTSTATRIGHTMEAN_SIZE];
+    static const uint16_t TEXTSTATRIGHTSTD_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textStatRightStdBuffer[TEXTSTATRIGHTSTD_SIZE];
 
 private:
 

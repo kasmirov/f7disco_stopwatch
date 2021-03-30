@@ -46,11 +46,15 @@ Screen1ViewBase::Screen1ViewBase() :
     textCurDir.setPosition(46, 124, 40, 25);
     textCurDir.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textCurDir.setLinespacing(0);
+    textCurDirBuffer[0] = 0;
+    textCurDir.setWildcard(textCurDirBuffer);
     textCurDir.setTypedText(touchgfx::TypedText(T_SINGLEUSEID21));
 
     textCurTimer.setPosition(71, 124, 110, 25);
     textCurTimer.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textCurTimer.setLinespacing(0);
+    textCurTimerBuffer[0] = 0;
+    textCurTimer.setWildcard(textCurTimerBuffer);
     textCurTimer.setTypedText(touchgfx::TypedText(T_SINGLEUSEID7));
 
     textStatistic.setXY(82, 155);
@@ -81,41 +85,64 @@ Screen1ViewBase::Screen1ViewBase() :
     textStatLeftMin.setXY(67, 182);
     textStatLeftMin.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textStatLeftMin.setLinespacing(0);
+    Unicode::snprintf(textStatLeftMinBuffer, TEXTSTATLEFTMIN_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID26).getText());
+    textStatLeftMin.setWildcard(textStatLeftMinBuffer);
+    textStatLeftMin.resizeToCurrentText();
     textStatLeftMin.setTypedText(touchgfx::TypedText(T_SINGLEUSEID13));
 
     textStatLeftMax.setXY(67, 202);
     textStatLeftMax.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textStatLeftMax.setLinespacing(0);
+    Unicode::snprintf(textStatLeftMaxBuffer, TEXTSTATLEFTMAX_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID27).getText());
+    textStatLeftMax.setWildcard(textStatLeftMaxBuffer);
+    textStatLeftMax.resizeToCurrentText();
     textStatLeftMax.setTypedText(touchgfx::TypedText(T_SINGLEUSEID14));
 
     textStatLeftMean.setXY(67, 222);
     textStatLeftMean.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textStatLeftMean.setLinespacing(0);
+    Unicode::snprintf(textStatLeftMeanBuffer, TEXTSTATLEFTMEAN_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID28).getText());
+    textStatLeftMean.setWildcard(textStatLeftMeanBuffer);
+    textStatLeftMean.resizeToCurrentText();
     textStatLeftMean.setTypedText(touchgfx::TypedText(T_SINGLEUSEID15));
 
     textStatLeftStd.setXY(67, 242);
     textStatLeftStd.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textStatLeftStd.setLinespacing(0);
+    Unicode::snprintf(textStatLeftStdBuffer, TEXTSTATLEFTSTD_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID29).getText());
+    textStatLeftStd.setWildcard(textStatLeftStdBuffer);
+    textStatLeftStd.resizeToCurrentText();
     textStatLeftStd.setTypedText(touchgfx::TypedText(T_SINGLEUSEID16));
 
     textStatRightMin.setXY(142, 182);
     textStatRightMin.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textStatRightMin.setLinespacing(0);
+    Unicode::snprintf(textStatRightMinBuffer, TEXTSTATRIGHTMIN_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID25).getText());
+    textStatRightMin.setWildcard(textStatRightMinBuffer);
+    textStatRightMin.resizeToCurrentText();
     textStatRightMin.setTypedText(touchgfx::TypedText(T_SINGLEUSEID17));
 
     textStatRightMax.setXY(142, 202);
     textStatRightMax.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textStatRightMax.setLinespacing(0);
+    Unicode::snprintf(textStatRightMaxBuffer, TEXTSTATRIGHTMAX_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID24).getText());
+    textStatRightMax.setWildcard(textStatRightMaxBuffer);
+    textStatRightMax.resizeToCurrentText();
     textStatRightMax.setTypedText(touchgfx::TypedText(T_SINGLEUSEID18));
 
     textStatRightMean.setXY(142, 222);
     textStatRightMean.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textStatRightMean.setLinespacing(0);
+    Unicode::snprintf(textStatRightMeanBuffer, TEXTSTATRIGHTMEAN_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID23).getText());
+    textStatRightMean.setWildcard(textStatRightMeanBuffer);
+    textStatRightMean.resizeToCurrentText();
     textStatRightMean.setTypedText(touchgfx::TypedText(T_SINGLEUSEID19));
 
-    textStatRightStd.setXY(142, 242);
+    textStatRightStd.setPosition(142, 242, 57, 20);
     textStatRightStd.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textStatRightStd.setLinespacing(0);
+    Unicode::snprintf(textStatRightStdBuffer, TEXTSTATRIGHTSTD_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID22).getText());
+    textStatRightStd.setWildcard(textStatRightStdBuffer);
     textStatRightStd.setTypedText(touchgfx::TypedText(T_SINGLEUSEID20));
 
     leftButton.setBoxWithBorderPosition(0, 0, 60, 40);

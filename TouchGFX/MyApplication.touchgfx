@@ -102,8 +102,8 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "UseBuffer": false,
-              "BufferSize": 0
+              "UseBuffer": true,
+              "BufferSize": 3
             },
             "Name": "textCurDir",
             "X": 46,
@@ -130,8 +130,8 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "UseBuffer": false,
-              "BufferSize": 0
+              "UseBuffer": true,
+              "BufferSize": 10
             },
             "Name": "textCurTimer",
             "X": 71,
@@ -277,10 +277,15 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId26",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "textStatLeftMin",
             "X": 67,
             "Y": 182,
-            "Width": 57,
+            "Width": 10,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -301,10 +306,15 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId27",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "textStatLeftMax",
             "X": 67,
             "Y": 202,
-            "Width": 57,
+            "Width": 10,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -325,10 +335,15 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId28",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "textStatLeftMean",
             "X": 67,
             "Y": 222,
-            "Width": 57,
+            "Width": 10,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -349,10 +364,15 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId29",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "textStatLeftStd",
             "X": 67,
             "Y": 242,
-            "Width": 57,
+            "Width": 10,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -373,10 +393,15 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId25",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "textStatRightMin",
             "X": 142,
             "Y": 182,
-            "Width": 57,
+            "Width": 10,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -397,10 +422,15 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId24",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "textStatRightMax",
             "X": 142,
             "Y": 202,
-            "Width": 57,
+            "Width": 10,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -421,10 +451,15 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId23",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "textStatRightMean",
             "X": 142,
             "Y": 222,
-            "Width": 57,
+            "Width": 10,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -443,8 +478,13 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId22",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "textStatRightStd",
             "X": 142,
             "Y": 242,
@@ -812,6 +852,38 @@
       },
       {
         "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId26",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId27",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId28",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId29",
         "IsResource": false
       }
     ],
