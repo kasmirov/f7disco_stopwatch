@@ -6,7 +6,7 @@
 
 #include <gui/common/FrontendApplication.hpp>
 #include <touchgfx/containers/Container.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 
@@ -25,9 +25,9 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::TextArea textNum;
-    touchgfx::TextArea textDir;
-    touchgfx::TextArea textTime;
+    touchgfx::TextAreaWithOneWildcard textNum;
+    touchgfx::TextAreaWithOneWildcard textDir;
+    touchgfx::TextAreaWithOneWildcard textTime;
     touchgfx::Line line1;
     touchgfx::PainterRGB565 line1Painter;
 

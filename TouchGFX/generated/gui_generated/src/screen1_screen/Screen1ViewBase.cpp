@@ -37,18 +37,18 @@ Screen1ViewBase::Screen1ViewBase() :
     scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
     scrollList1.setSwipeAcceleration(10);
     scrollList1.setDragAcceleration(10);
-    scrollList1.setNumberOfItems(20);
+    scrollList1.setNumberOfItems(22);
     scrollList1.setPadding(0, 0);
     scrollList1.setSnapping(false);
     scrollList1.setDrawableSize(25, 0);
     scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
 
-    textCurDir.setXY(48, 124);
+    textCurDir.setPosition(46, 124, 40, 25);
     textCurDir.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textCurDir.setLinespacing(0);
     textCurDir.setTypedText(touchgfx::TypedText(T_SINGLEUSEID21));
 
-    textCurTimer.setXY(71, 124);
+    textCurTimer.setPosition(71, 124, 110, 25);
     textCurTimer.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textCurTimer.setLinespacing(0);
     textCurTimer.setTypedText(touchgfx::TypedText(T_SINGLEUSEID7));

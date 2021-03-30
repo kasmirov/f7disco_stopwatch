@@ -1,6 +1,8 @@
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 
+
+
 Screen1Presenter::Screen1Presenter(Screen1View& v)
     : view(v)
 {
@@ -37,20 +39,16 @@ void Screen1Presenter::touchRightBtnClicked()
     model->touchRightBtnClicked();
 }
 
+
 void Screen1Presenter::timeMeasureReceived(int dir, float time)
 {
-    static const uint16_t TEXTAREA_SIZE = 20;
-    touchgfx::Unicode::UnicodeChar buf[TEXTAREA_SIZE];
-
     // Добавить реализацию отображения результата, сбора статистики, добавления в лог
     if (dir == 0)
     {
-        Unicode::snprintf(buf, TEXTAREA_SIZE, "%s", "<");
-        view.textCurDirUpdated(buf, 1);
+        view.textCurDirUpdated("<");
     }
     else
     {
-        Unicode::snprintf(buf, TEXTAREA_SIZE, "%s", ">");
-        view.textCurDirUpdated(buf, 1);
+        view.textCurDirUpdated(">");
     }
 }

@@ -17,7 +17,7 @@ public:
     virtual void leftBtnClicked();
     virtual void rightBtnClicked();
 
-    virtual void textCurDirUpdated(touchgfx::Unicode::UnicodeChar* textAreaBuffer, int len);
+    virtual void textCurDirUpdated(const char* textAreaBuffer);
 protected:
 };
 

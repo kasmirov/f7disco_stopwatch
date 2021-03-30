@@ -65,7 +65,7 @@ protected:
     touchgfx::ScrollList scrollList1;
     touchgfx::DrawableListItems<CustomContainer1, 10> scrollList1ListItems;
     touchgfx::TextAreaWithOneWildcard textCurDir;
-    touchgfx::TextArea textCurTimer;
+    touchgfx::TextAreaWithOneWildcard textCurTimer;
     touchgfx::TextArea textStatistic;
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea1_1;

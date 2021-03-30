@@ -9,23 +9,23 @@ CustomContainer1Base::CustomContainer1Base()
 {
     setWidth(250);
     setHeight(25);
-    textNum.setXY(0, 0);
+    textNum.setPosition(0, 0, 65, 25);
     textNum.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textNum.setLinespacing(0);
     textNum.setTypedText(touchgfx::TypedText(T_SINGLEUSEID3));
 
-    textDir.setXY(80, 0);
+    textDir.setPosition(80, 0, 16, 25);
     textDir.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textDir.setLinespacing(0);
     textDir.setTypedText(touchgfx::TypedText(T_SINGLEUSEID4));
 
-    textTime.setXY(110, 0);
+    textTime.setPosition(110, 0, 110, 25);
     textTime.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textTime.setLinespacing(0);
     textTime.setTypedText(touchgfx::TypedText(T_SINGLEUSEID5));
 
     line1.setPosition(0, 22, 250, 2);
-    line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(105, 103, 103));
+    line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(86, 86, 87));
     line1.setPainter(line1Painter);
     line1.setStart(1, 1);
     line1.setEnd(230, 1);

@@ -70,7 +70,7 @@
             "IsHorizontal": false,
             "IsCircular": false,
             "ItemTemplateName": "CustomContainer1",
-            "NumberofItems": 20,
+            "NumberofItems": 22,
             "InitialElement": 0,
             "ItemMargin": 0,
             "Easing": "Back",
@@ -99,16 +99,16 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "UseBuffer": false,
               "BufferSize": 0
             },
             "Name": "textCurDir",
-            "X": 48,
+            "X": 46,
             "Y": 124,
-            "Width": 0,
+            "Width": 40,
             "Height": 25,
             "Visible": true,
             "LockPosition": false,
@@ -127,12 +127,16 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
             "Name": "textCurTimer",
             "X": 71,
             "Y": 124,
-            "Width": 109,
+            "Width": 110,
             "Height": 25,
             "Visible": true,
             "LockPosition": false,
@@ -620,8 +624,12 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
             "Name": "textNum",
             "X": 0,
             "Y": 0,
@@ -644,8 +652,12 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
             "Name": "textDir",
             "X": 80,
             "Y": 0,
@@ -668,12 +680,16 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
             "Name": "textTime",
             "X": 110,
             "Y": 0,
-            "Width": 109,
+            "Width": 110,
             "Height": 25,
             "Visible": true,
             "LockPosition": false,
@@ -685,9 +701,9 @@
           {
             "Type": "Line",
             "Color": {
-              "Red": 105,
-              "Green": 103,
-              "Blue": 103
+              "Red": 86,
+              "Green": 86,
+              "Blue": 87
             },
             "Alpha": 255,
             "StartX": 1,
