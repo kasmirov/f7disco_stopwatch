@@ -11,7 +11,7 @@ void CustomContainer1::initialize()
     CustomContainer1Base::initialize();
 }
 
-void CustomContainer1::setupListElement(int ctr, char *dir, float time)
+void CustomContainer1::setupListElement(int ctr, const char *dir, float time)
 {
     //textNum
     Unicode::snprintf(textNumBuffer, TEXTNUM_SIZE, "%d", ctr);
@@ -19,6 +19,6 @@ void CustomContainer1::setupListElement(int ctr, char *dir, float time)
     Unicode::strncpy(textDirBuffer, dir, TEXTDIR_SIZE);
     //textTime
     Unicode::snprintfFloat(textTimeBuffer, TEXTTIME_SIZE, "%2.6f", time);
-
+    
     invalidate();
 }

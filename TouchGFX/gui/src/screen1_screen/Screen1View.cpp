@@ -10,7 +10,7 @@ Screen1View::Screen1View()
 void Screen1View::setupScreen()
 {
     Screen1ViewBase::setupScreen();
-    scrollList1.removeAll();
+    //scrollList1.removeAll();
 }
 
 void Screen1View::tearDownScreen()
@@ -60,7 +60,8 @@ void Screen1View::addToList(const char* dir, float time)
 {
     static int ctr = 1;
     CustomContainer1 listElement;
-    listElement.setupListElement(1, ">", 12.345f);
+    listElement.setupListElement(ctr, dir, time);
+    scrollList1.add(listElement);
     /*
     Drawable *obj = listElement.getFirstChild();
     while (obj != 0)
