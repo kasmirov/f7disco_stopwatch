@@ -23,8 +23,7 @@ public:
     virtual void addToList(const char* dir, float time);
 
 protected:
-    static const int numberOfListElements = 20;
-    CustomContainer1 listElements[numberOfListElements];
+
 };
 
 #endif // SCREEN1VIEW_HPP

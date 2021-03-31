@@ -8,11 +8,18 @@
 
 Screen1ViewBase::Screen1ViewBase() :
     buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler),
-    flexButtonCallback(this, &Screen1ViewBase::flexButtonCallbackHandler)
+    flexButtonCallback(this, &Screen1ViewBase::flexButtonCallbackHandler),
+    updateItemCallback(this, &Screen1ViewBase::updateItemCallbackHandler)
 {
+
+    touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
 
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+
+    tiledImage1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_TEXTURES_IRONGRIP_ID));
+    tiledImage1.setPosition(0, 0, 480, 272);
+    tiledImage1.setOffset(0, 0);
 
     startButton.setXY(29, 0);
     startButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
@@ -142,16 +149,20 @@ Screen1ViewBase::Screen1ViewBase() :
     rightButton.setPosition(420, 232, 60, 40);
     rightButton.setAction(flexButtonCallback);
 
-    scrlContainer.setPosition(230, 0, 250, 220);
-    scrlContainer.setScrollbarsColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-
-    list.setDirection(touchgfx::SOUTH);
-    list.setPosition(0, 0, 250, 250);
-    scrlContainer.add(list);
-    scrlContainer.setScrollbarsPermanentlyVisible();
-    scrlContainer.setScrollbarsVisible(false);
+    scrollList1.setPosition(230, 0, 250, 232);
+    scrollList1.setHorizontal(false);
+    scrollList1.setCircular(false);
+    scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    scrollList1.setSwipeAcceleration(10);
+    scrollList1.setDragAcceleration(10);
+    scrollList1.setNumberOfItems(10);
+    scrollList1.setPadding(0, 0);
+    scrollList1.setSnapping(false);
+    scrollList1.setDrawableSize(25, 0);
+    scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
 
     add(__background);
+    add(tiledImage1);
     add(startButton);
     add(stopButton);
     add(textCurDir);
@@ -171,12 +182,16 @@ Screen1ViewBase::Screen1ViewBase() :
     add(textStatRightStd);
     add(leftButton);
     add(rightButton);
-    add(scrlContainer);
+    add(scrollList1);
 }
 
 void Screen1ViewBase::setupScreen()
 {
-
+    scrollList1.initialize();
+    for (int i = 0; i < scrollList1ListItems.getNumberOfDrawables(); i++)
+    {
+        scrollList1ListItems[i].initialize();
+    }
 }
 
 void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -212,5 +227,15 @@ void Screen1ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonCo
         //When rightButton clicked call virtual function
         //Call rightBtnClicked
         rightBtnClicked();
+    }
+}
+
+void Screen1ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
+{
+    if (items == &scrollList1ListItems)
+    {
+        touchgfx::Drawable* d = items->getDrawable(containerIndex);
+        CustomContainer1* cc = (CustomContainer1*)d;
+        scrollList1UpdateItem(*cc, itemIndex);
     }
 }

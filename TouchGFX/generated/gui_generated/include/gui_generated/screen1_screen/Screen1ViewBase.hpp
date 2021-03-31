@@ -8,12 +8,13 @@
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/TiledImage.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
-#include <touchgfx/containers/ScrollableContainer.hpp>
-#include <touchgfx/containers/ListLayout.hpp>
+#include <touchgfx/containers/scrollers/ScrollList.hpp>
+#include <gui/containers/CustomContainer1.hpp>
 #include <touchgfx/mixins/ClickListener.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
@@ -22,6 +23,11 @@ public:
     Screen1ViewBase();
     virtual ~Screen1ViewBase() {}
     virtual void setupScreen();
+
+    virtual void scrollList1UpdateItem(CustomContainer1& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Screen1
+    }
 
     /*
      * Virtual Action Handlers
@@ -55,6 +61,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
+    touchgfx::TiledImage tiledImage1;
     touchgfx::ClickListener< touchgfx::ButtonWithLabel > startButton;
     touchgfx::ButtonWithLabel stopButton;
     touchgfx::TextAreaWithOneWildcard textCurDir;
@@ -74,8 +81,8 @@ protected:
     touchgfx::TextAreaWithOneWildcard textStatRightStd;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > leftButton;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > rightButton;
-    touchgfx::ScrollableContainer scrlContainer;
-    touchgfx::ListLayout list;
+    touchgfx::ScrollList scrollList1;
+    touchgfx::DrawableListItems<CustomContainer1, 11> scrollList1ListItems;
 
     /*
      * Wildcard Buffers
@@ -108,13 +115,20 @@ private:
      */
     touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
     touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+    touchgfx::Callback<Screen1ViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
 
     /*
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
     void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
+    void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
 
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint16_t CANVAS_BUFFER_SIZE = 7200;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 };
 
 #endif // SCREEN1VIEWBASE_HPP

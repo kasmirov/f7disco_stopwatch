@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>4</fileVersion>
-    <fileChecksum>2785517234</fileChecksum>
+    <fileChecksum>2018058207</fileChecksum>
     <configuration>
         <name>STM32F746G_DISCO</name>
         <outputs>
@@ -549,6 +549,81 @@
             <file>$PROJ_DIR$\..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h</file>
             <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Kerning_verdana_30_4bpp.__cstat.et</file>
             <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Screen1Presenter.__cstat.et</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_16_8bpp.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_16_8bpp.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_30_8bpp.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\images\src\__designer\image_Blue_Textures_irongrip.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_16_8bpp_0.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_30_8bpp_0.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_20_8bpp.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_30_8bpp.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_20_8bpp.cpp</file>
+            <file>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_20_8bpp_0.cpp</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Kerning_verdana_20_8bpp.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Table_verdana_16_8bpp.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Kerning_verdana_30_8bpp.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Table_verdana_20_8bpp.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Table_verdana_30_8bpp.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\image_Blue_Textures_irongrip.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Font_verdana_16_8bpp_0.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Font_verdana_30_8bpp_0.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Kerning_verdana_16_8bpp.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Font_verdana_30_8bpp_0.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Kerning_verdana_16_8bpp.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Kerning_verdana_20_8bpp.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Font_verdana_20_8bpp_0.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Font_verdana_20_8bpp_0.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Font_verdana_16_8bpp_0.o</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Table_verdana_16_8bpp.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\image_Blue_Textures_irongrip.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Table_verdana_20_8bpp.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Kerning_verdana_30_8bpp.xcl</file>
+            <file>$PROJ_DIR$\STM32F746G_DISCO\Obj\Table_verdana_30_8bpp.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\iosfwd</file>
+            <file>$TOOLKIT_DIR$\inc\c\xatomic.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cerrno</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cctype</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\utility</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\system_error</file>
+            <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocinfo</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\ctime</file>
+            <file>$TOOLKIT_DIR$\inc\c\time32.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdio</file>
+            <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\ostream</file>
+            <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\wctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdint</file>
+            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\stdexcept</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cwctype</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\limits</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cfloat</file>
+            <file>$TOOLKIT_DIR$\inc\c\float.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\string</file>
+            <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\istream</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocnum</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\clocale</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xmemory0</file>
+            <file>$TOOLKIT_DIR$\inc\c\xctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cwchar</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xstring</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xutility</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\typeinfo</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocale</file>
+            <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\climits</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\ios</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cmath</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xiosbase</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\streambuf</file>
+            <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
@@ -955,7 +1030,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 327 473 470 274 247 282 258 257 260 322 326 339 443 447 501 345 448 444 312 337 397 380 398 387 334 408 476 467 449 462 458 466 453 456 472 461 454 478 511 460 468 455 465 464 271 248 459 263 269 469 457 474 471 393 388 524 409 452 400 477 309 346 328 301 320 450 341 303 404 298 324 316 342 314 539 313 291 321 293 299 308 302 475 479 463 399 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 305 294 317 323 300 288 286 295 343 518 446 533 540 535 523 520 528 445 536 255 532 407 331 329 348 236 325 242 338 229 250 333 237 253 227 281 344 335 318 230 238 254 235 244 228 249 374 287 292 332 432 310 297 296 311 307 359 289 304 306 290 362</file>
+                    <file> 327 473 470 274 247 282 258 257 260 322 326 339 443 447 501 345 448 444 312 337 397 380 398 387 334 408 476 467 449 462 458 466 453 456 472 461 454 478 511 460 468 455 465 464 271 248 459 263 269 469 457 474 471 393 388 524 409 452 400 477 309 346 328 301 320 450 341 303 404 298 324 316 342 314 539 313 291 520 343 321 463 399 305 294 317 323 300 288 286 295 518 446 533 540 535 523 528 445 293 299 308 302 475 479 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 536 255 532 407 331 329 348 236 325 242 338 229 250 333 237 253 227 281 344 335 318 230 238 254 235 244 228 249 374 287 292 332 432 310 297 296 311 307 359 289 304 306 290 362</file>
                 </tool>
             </inputs>
         </file>
@@ -1001,7 +1076,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 329 477 456 339 470 274 247 282 258 257 473 260 322 400 476 467 449 462 458 466 453 501 443 447 472 461 454 452 309 346 328 301 320 450 341 303 395 312 337 397 380 398 387 334 408 478 511 460 468 455 465 464 271 248 459 263 269 469 457 474 471 393 388 524 409 404 298 324 316 342 314 539 313 291 321 326 345 293 299 308 302 475 479 463 399 444 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 305 294 317 323 300 288 286 295 343 518 446 533 540 535 523 520 528 445 536 384 229 250 333 237 253 227 281 344 335 236 325 242 338 318 230 238 254 235 244 228 249 374 287 292 332 432 310 297 296 311 307 359 289 304 306 290 362</file>
+                    <file> 329 477 456 339 470 274 247 282 258 257 473 260 322 400 476 467 449 462 458 466 453 501 443 447 472 461 454 452 309 346 328 301 320 450 341 303 395 312 337 397 380 398 387 334 408 478 511 460 468 455 465 464 271 248 459 263 269 469 457 474 471 393 388 524 409 404 298 324 316 342 314 539 313 291 520 343 321 326 345 463 399 444 305 294 317 323 300 288 286 295 518 446 533 540 535 523 528 445 293 299 308 302 475 479 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 536 384 229 250 333 237 253 227 281 344 335 236 325 242 338 318 230 238 254 235 244 228 249 374 287 292 332 432 310 297 296 311 307 359 289 304 306 290 362</file>
                 </tool>
             </inputs>
         </file>
@@ -2235,7 +2310,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 468 455 465 464 271 274 247 282 258 257 248 459 263 269 469 457 474 471 511 460 339 470 397 380 398 473 260 322 387 393 388 524 476 467 449 462 458 466 453 501 456 443 447 472 461 454 409 452 400 477 309 346 328 301 320 450 341 303 408 404 312 337 334 478 298 324 316 342 314 539 313 291 321 326 345 293 299 308 302 475 479 463 399 444 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 305 294 317 323 300 288 286 295 343 518 446 533 540 535 523 520 528 445 536 527 532</file>
+                    <file> 468 455 465 464 271 274 247 282 258 257 248 459 263 269 469 457 474 471 511 460 339 470 397 380 398 473 260 322 387 393 388 524 476 467 449 462 458 466 453 501 456 443 447 472 461 454 409 452 400 477 309 346 328 301 320 450 341 303 408 404 312 337 334 478 298 324 316 342 314 539 313 291 520 343 321 326 345 463 399 444 305 294 317 323 300 288 286 295 518 446 533 540 535 523 528 445 293 299 308 302 475 479 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 536 527 532</file>
                 </tool>
             </inputs>
         </file>
@@ -2258,7 +2333,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 298 324 478 511 460 339 470 274 247 282 258 257 468 455 465 464 271 248 459 263 269 469 457 474 471 397 380 398 473 260 322 387 393 388 524 476 467 449 462 458 466 453 501 456 443 447 472 461 454 409 452 400 477 309 346 328 301 320 450 341 303 408 404 316 342 314 539 313 291 321 326 345 293 299 308 302 475 479 463 399 444 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 305 294 317 323 300 288 286 295 343 518 446 533 540 535 523 520 528 445 536</file>
+                    <file> 298 324 478 511 460 339 470 274 247 282 258 257 468 455 465 464 271 248 459 263 269 469 457 474 471 397 380 398 473 260 322 387 393 388 524 476 467 449 462 458 466 453 501 456 443 447 472 461 454 409 452 400 477 309 346 328 301 320 450 341 303 408 404 316 342 314 539 313 291 520 343 321 326 345 463 399 444 305 294 317 323 300 288 286 295 518 446 533 540 535 523 528 445 293 299 308 302 475 479 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 536</file>
                 </tool>
             </inputs>
         </file>
@@ -2304,7 +2379,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 298 324 478 511 460 339 470 274 247 282 258 257 468 455 465 464 271 248 459 263 269 469 457 474 471 397 380 398 473 260 322 387 393 388 524 476 467 449 462 458 466 453 501 456 443 447 472 461 454 409 452 400 477 309 346 328 301 320 450 341 303 408 404 316 342 314 539 313 291 321 326 345 293 299 308 302 475 479 463 399 444 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 305 294 317 323 300 288 286 295 343 518 446 533 540 535 523 520 528 445 536</file>
+                    <file> 298 324 478 511 460 339 470 274 247 282 258 257 468 455 465 464 271 248 459 263 269 469 457 474 471 397 380 398 473 260 322 387 393 388 524 476 467 449 462 458 466 453 501 456 443 447 472 461 454 409 452 400 477 309 346 328 301 320 450 341 303 408 404 316 342 314 539 313 291 520 343 321 326 345 463 399 444 305 294 317 323 300 288 286 295 518 446 533 540 535 523 528 445 293 299 308 302 475 479 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 536 609 599 601 589 613 602 612 618 614 593 615 600 617 616 610 382 125 285 603 588 605 590 595 591 594 607 604 592 596 597 598 606 611 608 580 576 587 586 577 583 579 575 584 574 585 581 578 582</file>
                 </tool>
             </inputs>
         </file>
@@ -2419,7 +2494,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 324 478 511 460 339 470 274 247 282 258 257 468 455 465 464 271 248 459 263 269 469 457 474 471 397 380 398 473 260 322 387 393 388 524 476 467 449 462 458 466 453 501 456 443 447 472 461 454 409 452 400 477 309 346 328 301 320 450 341 303 408 404 316 342 314 539 313 291 321 326 345 293 299 308 302 475 479 463 399 444 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 305 294 317 323 300 288 286 295 343 518 446 533 540 535 523 520 528 445 536 521 255 527</file>
+                    <file> 324 478 511 460 339 470 274 247 282 258 257 468 455 465 464 271 248 459 263 269 469 457 474 471 397 380 398 473 260 322 387 393 388 524 476 467 449 462 458 466 453 501 456 443 447 472 461 454 409 452 400 477 309 346 328 301 320 450 341 303 408 404 316 342 314 539 313 291 520 343 321 326 345 463 399 444 305 294 317 323 300 288 286 295 518 446 533 540 535 523 528 445 293 299 308 302 475 479 401 383 381 537 480 403 402 405 386 396 394 391 385 390 411 536 521 255 527</file>
                 </tool>
             </inputs>
         </file>
@@ -2461,7 +2536,197 @@
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 57 179 52 161 44 46 192 50 233 266 185 262 283 279 168 222 166 213 181 184 173 231 315 234 277 251 240 189 215 81 246 48 38 74 36 226 243 245 84 42 53 176 64 178 35 221 186 170 172 165 49 180 212 183 188 193 164 171 169 219 163 191 45 55 51 190 218 211 40 43 41 54 232 224 268 60 80 174 208 177 162 214 187 160 39 47 56 61 63 100</file>
+                    <file> 57 179 52 161 44 46 192 50 233 266 185 568 566 563 168 222 166 213 181 184 173 231 315 559 562 554 556 240 189 215 81 246 48 38 74 36 226 243 245 84 42 53 176 64 178 35 221 186 170 172 165 49 180 212 183 188 193 164 171 169 219 163 191 45 55 51 190 218 211 40 43 41 54 555 557 558 60 80 174 208 177 162 214 187 160 39 47 56 61 63 100</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_16_8bpp.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 555</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 569</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 347 336 443 447 501 473 470 274 247 282 258 257 260 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_16_8bpp.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 562</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 564</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 443 447 501 473 470 274 247 282 258 257 260 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_30_8bpp.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 558</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 573</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 347 336 443 447 501 473 470 274 247 282 258 257 260 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\__designer\image_Blue_Textures_irongrip.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 559</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 570</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_16_8bpp_0.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 568</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 560</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 473 470 274 247 282 258 257 260 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_30_8bpp_0.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 563</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 561</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 473 470 274 247 282 258 257 260 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_20_8bpp.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 554</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 565</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 443 447 501 473 470 274 247 282 258 257 260 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_30_8bpp.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 556</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 572</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 443 447 501 473 470 274 247 282 258 257 260 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_20_8bpp.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 557</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 571</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 347 336 443 447 501 473 470 274 247 282 258 257 260 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_20_8bpp_0.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 566</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 567</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 473 470 274 247 282 258 257 260 322</file>
                 </tool>
             </inputs>
         </file>

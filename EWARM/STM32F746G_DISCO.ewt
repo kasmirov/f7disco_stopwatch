@@ -1405,13 +1405,13 @@
                     <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\CachedFont.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_16_4bpp_0.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_16_8bpp_0.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_20_4bpp_0.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_20_8bpp_0.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_30_4bpp_0.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Font_verdana_30_8bpp_0.cpp</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\FontCache.cpp</name>
@@ -1420,22 +1420,22 @@
                     <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\GeneratedFont.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_16_4bpp.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_16_8bpp.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_20_4bpp.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_20_8bpp.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_30_4bpp.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Kerning_verdana_30_8bpp.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_16_4bpp.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_16_8bpp.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_20_4bpp.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_20_8bpp.cpp</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_30_4bpp.cpp</name>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\Table_verdana_30_8bpp.cpp</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\TouchGFX\generated\fonts\src\UnmappedDataFont.cpp</name>
@@ -1463,6 +1463,9 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\__designer\image_Blue_Buttons_Round_Edge_small_pressed.cpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\__designer\image_Blue_Textures_irongrip.cpp</name>
                 </file>
             </group>
             <group>

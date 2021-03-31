@@ -3,6 +3,7 @@
 #include <string>
 #include <gui/containers/CustomContainer1.hpp>
 
+
 Screen1View::Screen1View()
 {
 
@@ -60,29 +61,8 @@ void Screen1View::textCurTimerUpdated(float time)
 void Screen1View::addToList(const char* dir, float time)
 {
     static int cnt = 0;
-    //CustomContainer1 listElement;    
-    
-    if (1 & (cnt < numberOfListElements/5))
-    {
-        listElements[cnt].setupListElement(cnt, dir, time);
-        list.add(listElements[cnt]);
-        list.invalidate();
-        scrlContainer.invalidate();
-    }
-    
-    /*
-    Drawable *obj = listElement.getFirstChild();
-    while (obj != 0)
-    {
-        touchgfx::TextAreaWithOneWildcard* obj2 = dynamic_cast<touchgfx::TextAreaWithOneWildcard*> (obj);
-        std::string s = typeid(obj2).name();
-        if (s == "touchgfx::TextAreaWithOneWildcard")
-        {
-
-        }
-            //((touchgfx::TextAreaWithOneWildcard *)obj)->
-        obj = listElement.getNextSibling();
-    }
-    */
+  
+    scrollList1ListItems[cnt % 10].setupListElement(cnt + 1, dir, time);
+    scrollList1.invalidate();
     cnt++;
 }

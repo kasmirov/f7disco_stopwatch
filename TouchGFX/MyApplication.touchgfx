@@ -4,6 +4,24 @@
       {
         "Components": [
           {
+            "Type": "TiledImage",
+            "FileName": "__designer\\Blue_Textures_irongrip.png",
+            "Alpha": 255,
+            "OffsetX": 0,
+            "OffsetY": 0,
+            "Name": "tiledImage1",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
             "Type": "ButtonWithLabel",
             "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
             "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
@@ -571,40 +589,25 @@
             "Moveable": false
           },
           {
-            "Components": [
-              {
-                "Components": [],
-                "Type": "ListLayout",
-                "Direction": "South",
-                "Name": "list",
-                "X": 0,
-                "Y": 0,
-                "Width": 250,
-                "Height": 250,
-                "Visible": true,
-                "LockPosition": false,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              }
-            ],
-            "Type": "ScrollableContainer",
-            "HorizontalScrollEnabled": true,
-            "VerticalScrollEnabled": true,
-            "ScrollbarsVisible": true,
-            "ScrollbarsVisibleOnPressed": false,
-            "ScrollbarsColor": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "ScrollbarsAlpha": 255,
-            "Name": "scrlContainer",
+            "Type": "ScrollList",
+            "PaddingBefore": 0,
+            "PaddingAfter": 0,
+            "Snapping": false,
+            "IsHorizontal": false,
+            "IsCircular": false,
+            "ItemTemplateName": "CustomContainer1",
+            "NumberofItems": 10,
+            "InitialElement": 0,
+            "ItemMargin": 0,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "Name": "scrollList1",
             "X": 230,
             "Y": 0,
             "Width": 250,
-            "Height": 220,
+            "Height": 232,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -665,7 +668,7 @@
         ],
         "Name": "Screen1",
         "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
+        "CanvasBufferSize": 7200
       }
     ],
     "CustomContainerDefinitions": [
@@ -684,7 +687,6 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId32",
               "UseBuffer": true,
               "BufferSize": 6
             },
@@ -713,7 +715,6 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId33",
               "UseBuffer": true,
               "BufferSize": 4
             },
@@ -911,14 +912,6 @@
       },
       {
         "TextEntryId": "SingleUseId31",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId32",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId33",
         "IsResource": false
       }
     ],

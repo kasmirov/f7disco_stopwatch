@@ -12,14 +12,14 @@ CustomContainer1Base::CustomContainer1Base()
     textNum.setPosition(0, 0, 65, 25);
     textNum.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textNum.setLinespacing(0);
-    Unicode::snprintf(textNumBuffer, TEXTNUM_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID32).getText());
+    textNumBuffer[0] = 0;
     textNum.setWildcard(textNumBuffer);
     textNum.setTypedText(touchgfx::TypedText(T_SINGLEUSEID3));
 
     textDir.setPosition(70, 0, 35, 25);
     textDir.setColor(touchgfx::Color::getColorFrom24BitRGB(64, 119, 255));
     textDir.setLinespacing(0);
-    Unicode::snprintf(textDirBuffer, TEXTDIR_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID33).getText());
+    textDirBuffer[0] = 0;
     textDir.setWildcard(textDirBuffer);
     textDir.setTypedText(touchgfx::TypedText(T_SINGLEUSEID4));
 
