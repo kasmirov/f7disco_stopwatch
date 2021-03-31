@@ -63,33 +63,6 @@
             "Moveable": false
           },
           {
-            "Type": "ScrollList",
-            "PaddingBefore": 0,
-            "PaddingAfter": 0,
-            "Snapping": false,
-            "IsHorizontal": false,
-            "IsCircular": false,
-            "ItemTemplateName": "CustomContainer1",
-            "NumberofItems": 22,
-            "InitialElement": 0,
-            "ItemMargin": 0,
-            "Easing": "Back",
-            "EasingOption": "Out",
-            "SwipeAcceleration": 1.0,
-            "DragAcceleration": 1.0,
-            "Name": "scrollList1",
-            "X": 230,
-            "Y": 0,
-            "Width": 250,
-            "Height": 222,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "Type": "TextArea",
             "TextId": "SingleUseId21",
             "TextRotation": "0",
@@ -596,6 +569,48 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "Components": [],
+                "Type": "ListLayout",
+                "Direction": "South",
+                "Name": "list",
+                "X": 0,
+                "Y": 0,
+                "Width": 250,
+                "Height": 250,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "Type": "ScrollableContainer",
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": false,
+            "ScrollbarsColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "ScrollbarsAlpha": 255,
+            "Name": "scrlContainer",
+            "X": 230,
+            "Y": 0,
+            "Width": 250,
+            "Height": 220,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
@@ -650,7 +665,7 @@
         ],
         "Name": "Screen1",
         "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 7200
+        "CanvasBufferSize": 0
       }
     ],
     "CustomContainerDefinitions": [
@@ -669,7 +684,7 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId33",
+              "TextId": "SingleUseId32",
               "UseBuffer": true,
               "BufferSize": 6
             },
@@ -698,14 +713,14 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId32",
+              "TextId": "SingleUseId33",
               "UseBuffer": true,
               "BufferSize": 4
             },
             "Name": "textDir",
-            "X": 80,
+            "X": 70,
             "Y": 0,
-            "Width": 16,
+            "Width": 35,
             "Height": 25,
             "Visible": true,
             "LockPosition": false,
@@ -727,9 +742,8 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId34",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 12
             },
             "Name": "textTime",
             "X": 110,
@@ -905,10 +919,6 @@
       },
       {
         "TextEntryId": "SingleUseId33",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId34",
         "IsResource": false
       }
     ],

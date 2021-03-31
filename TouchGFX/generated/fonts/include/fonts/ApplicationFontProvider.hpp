@@ -20,9 +20,9 @@ struct Typography
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0; // verdana_20_4bpp
-    static const touchgfx::FontId LARGE = 1;   // verdana_30_4bpp
-    static const touchgfx::FontId SMALL = 2;   // verdana_16_4bpp
+    static const touchgfx::FontId DEFAULT = 0; // verdana_20_8bpp
+    static const touchgfx::FontId LARGE = 1;   // verdana_30_8bpp
+    static const touchgfx::FontId SMALL = 2;   // verdana_16_8bpp
     static const uint16_t NUMBER_OF_FONTS = 3;
 };
 

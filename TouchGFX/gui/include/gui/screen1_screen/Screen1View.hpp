@@ -3,6 +3,7 @@
 
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/containers/CustomContainer1.hpp>
 
 class Screen1View : public Screen1ViewBase
 {

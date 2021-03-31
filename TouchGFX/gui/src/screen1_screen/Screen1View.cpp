@@ -1,6 +1,7 @@
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <typeinfo>
 #include <string>
+#include <gui/containers/CustomContainer1.hpp>
 
 Screen1View::Screen1View()
 {
@@ -58,10 +59,17 @@ void Screen1View::textCurTimerUpdated(float time)
 
 void Screen1View::addToList(const char* dir, float time)
 {
-    static int ctr = 1;
-    CustomContainer1 listElement;
-    listElement.setupListElement(ctr, dir, time);
-    scrollList1.add(listElement);
+    static int cnt = 0;
+    //CustomContainer1 listElement;    
+    
+    if (1 & (cnt < numberOfListElements/5))
+    {
+        listElements[cnt].setupListElement(cnt, dir, time);
+        list.add(listElements[cnt]);
+        list.invalidate();
+        scrlContainer.invalidate();
+    }
+    
     /*
     Drawable *obj = listElement.getFirstChild();
     while (obj != 0)
@@ -76,5 +84,5 @@ void Screen1View::addToList(const char* dir, float time)
         obj = listElement.getNextSibling();
     }
     */
-    ctr++;
+    cnt++;
 }

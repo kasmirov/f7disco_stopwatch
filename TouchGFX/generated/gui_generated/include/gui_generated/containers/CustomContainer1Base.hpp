@@ -38,7 +38,7 @@ protected:
     touchgfx::Unicode::UnicodeChar textNumBuffer[TEXTNUM_SIZE];
     static const uint16_t TEXTDIR_SIZE = 4;
     touchgfx::Unicode::UnicodeChar textDirBuffer[TEXTDIR_SIZE];
-    static const uint16_t TEXTTIME_SIZE = 10;
+    static const uint16_t TEXTTIME_SIZE = 12;
     touchgfx::Unicode::UnicodeChar textTimeBuffer[TEXTTIME_SIZE];
 
 private:
