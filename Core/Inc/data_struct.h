@@ -13,6 +13,19 @@ typedef struct DataStruct
   float measure;
 }DataStruct_t;
   
+typedef enum {
+    IDLE,
+    STAT_LEFT,
+    STAT_RIGHT,
+    MOVE_LEFT,
+    MOVE_RIGHT
+}ObjectState_t;
+  
+typedef enum{
+    MEAS_OFF,
+    MEAS_ON
+}MeasState_t;  
+    
 #ifdef __cplusplus
 }
 #endif
