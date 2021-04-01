@@ -29,7 +29,8 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+#include "meas_app.h"
+#include "data_struct.h"
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -81,6 +82,12 @@ const osThreadAttr_t TouchGFXTask_attributes = {
   .stack_size = 4096 * 4
 };
 /* USER CODE BEGIN PV */
+osThreadId_t MeasTaskHandle;
+const osThreadAttr_t MeasTask_attributes = {
+  .name = "MeasTask",
+  .priority = (osPriority_t) osPriorityNormal,
+  .stack_size = 4096 * 1
+};
 static FMC_SDRAM_CommandTypeDef Command;
 /* USER CODE END PV */
 
@@ -98,12 +105,12 @@ static void MX_TIM5_Init(void);
 void TouchGFX_Task(void *argument);
 
 /* USER CODE BEGIN PFP */
-
+void Meas_Task(void *argument);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+osMessageQueueId_t MsgQueue;
 /* USER CODE END 0 */
 
 /**
@@ -152,7 +159,7 @@ int main(void)
   MX_TIM5_Init();
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
-  printf("start \n");
+  
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -172,14 +179,17 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
+  MsgQueue = osMessageQueueNew(5, sizeof(DataStruct_t), NULL);
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
   /* creation of TouchGFXTask */
   TouchGFXTaskHandle = osThreadNew(TouchGFX_Task, NULL, &TouchGFXTask_attributes);
-
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+  MeasTaskHandle = osThreadNew(Meas_Task, NULL, &MeasTask_attributes);
+    
+
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -667,7 +677,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+//extern "C" void timeMeasureReceived(int dir, float time);
+//#include "TouchGFX/gui/include/gui/model/ModelListener.hpp"
 
+void Meas_Task(void *argument)
+{  
+  Meas_Process();
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);   
+  }
+}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_TouchGFX_Task */

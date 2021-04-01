@@ -62,7 +62,7 @@ void Screen1View::addToList(const char* dir, float time)
 {
     static int cnt = 0;
   
-    scrollList1ListItems[cnt % 10].setupListElement(cnt + 1, dir, time);
+    scrollList1ListItems[cnt % scrollList1ListItems.getNumberOfDrawables()].setupListElement(cnt + 1, dir, time);
     scrollList1.invalidate();
     cnt++;
 }

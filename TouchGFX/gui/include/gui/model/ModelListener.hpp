@@ -18,7 +18,7 @@ public:
     virtual void timeMeasureReceived(int dir, float time);
     virtual void leftPositionReached(bool state);
     virtual void rightPositionReached(bool state);
-
+    
 protected:
     Model* model;
 };

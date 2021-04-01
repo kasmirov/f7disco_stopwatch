@@ -14,3 +14,5 @@ void ModelListener::rightPositionReached(bool state)
 {
 
 }
+
+
