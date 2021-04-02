@@ -13,6 +13,7 @@ void calc_stat(std::vector <float> &arr,
     if (arr.size() == 0) return;
     min = 99.999f;
     max = 0.0f;
+    stdev = 0.0f;
     float sum = 0;	
     for(auto v : arr)
     {
@@ -23,12 +24,13 @@ void calc_stat(std::vector <float> &arr,
     }
     mean = sum / (float)arr.size();
 
-    
+    if ((float)arr.size() < 2) return;
     for(auto v : arr)
     {
-        stdev = pow(mean - v, 2);
+        stdev += pow(mean - v, 2);
     }
-	stdev = sqrt(stdev);
+    
+    stdev = sqrt(stdev / ((float)arr.size() - 1));
 }
 
 Screen1Presenter::Screen1Presenter(Screen1View& v)
