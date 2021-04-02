@@ -2,8 +2,6 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <cstdio>
 #include <vector>
-#include <ostream>
-#include <iostream>
 #include <cmath>
 
 void calc_stat(std::vector <float> &arr, 
@@ -12,11 +10,13 @@ void calc_stat(std::vector <float> &arr,
 				float &mean,
 				float &stdev)
 {
-	float sum = 0;
-	
-	for(auto v : arr)
+    if (arr.size() == 0) return;
+    min = 99.999f;
+    max = 0.0f;
+    float sum = 0;	
+    for(auto v : arr)
     {
-        std::cout << v << std::endl;
+        //std::cout << v << std::endl;
         min = min < v ? min : v;
         max = max > v ? max : v;
         sum += v;
@@ -88,7 +88,7 @@ void Screen1Presenter::timeMeasureReceived(int dir, float time)
     float r_stdev;
 
     calc_stat(left, l_min, l_max, l_mean, l_stdev);
-    calc_stat(left, r_min, r_max, r_mean, r_stdev);
+    calc_stat(right, r_min, r_max, r_mean, r_stdev);
     view.textUpdateStat(l_min, l_max, l_mean, l_stdev, r_min, r_max, r_mean, r_stdev);
 
 }

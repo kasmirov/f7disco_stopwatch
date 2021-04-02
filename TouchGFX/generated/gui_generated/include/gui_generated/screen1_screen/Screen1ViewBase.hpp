@@ -69,7 +69,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard textStatRightMean;
     touchgfx::TextAreaWithOneWildcard textStatRightStd;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<CustomContainer1, 10> scrollList1ListItems;
+    touchgfx::DrawableListItems<CustomContainer1, 12> scrollList1ListItems;
 
     /*
      * Wildcard Buffers

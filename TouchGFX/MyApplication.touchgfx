@@ -498,7 +498,7 @@
             "IsHorizontal": false,
             "IsCircular": false,
             "ItemTemplateName": "CustomContainer1",
-            "NumberofItems": 10,
+            "NumberofItems": 12,
             "InitialElement": 0,
             "ItemMargin": 0,
             "Easing": "Back",
