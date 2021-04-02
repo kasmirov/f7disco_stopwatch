@@ -59,14 +59,15 @@ void Screen1Presenter::stopTimer()
 
 
 void Screen1Presenter::timeMeasureReceived(int dir, float time)
-{
-    static std::vector <float> left;
-    static std::vector <float> right;
-    
+{    
     // Добавить реализацию отображения результата, сбора статистики, добавления в лог
     view.textCurDirUpdated(dir == 0 ? "<<" : ">>");
     view.textCurTimerUpdated(time);
     view.addToList(dir == 0 ? "<<" : ">>", time);
+    
+    
+    static std::vector <float> left;
+    static std::vector <float> right;
     
     if (dir == 0)
     {
@@ -77,11 +78,11 @@ void Screen1Presenter::timeMeasureReceived(int dir, float time)
       right.push_back(time);
     }
     
-    float l_min;
+    float l_min = 100.0f;
     float l_max;
     float l_mean;
     float l_stdev;
-    float r_min;
+    float r_min = 100.0f;
     float r_max;
     float r_mean;
     float r_stdev;
@@ -89,6 +90,7 @@ void Screen1Presenter::timeMeasureReceived(int dir, float time)
     calc_stat(left, l_min, l_max, l_mean, l_stdev);
     calc_stat(left, r_min, r_max, r_mean, r_stdev);
     view.textUpdateStat(l_min, l_max, l_mean, l_stdev, r_min, r_max, r_mean, r_stdev);
+
 }
 
 void Screen1Presenter::leftPositionReached(bool state)

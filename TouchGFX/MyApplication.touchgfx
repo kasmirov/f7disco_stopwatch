@@ -249,7 +249,7 @@
             "Name": "textArea1_3",
             "X": 12,
             "Y": 242,
-            "Width": 34,
+            "Width": 53,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -268,7 +268,7 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId26",
@@ -278,7 +278,7 @@
             "Name": "textStatLeftMin",
             "X": 67,
             "Y": 182,
-            "Width": 10,
+            "Width": 65,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -297,7 +297,7 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId27",
@@ -307,7 +307,7 @@
             "Name": "textStatLeftMax",
             "X": 67,
             "Y": 202,
-            "Width": 10,
+            "Width": 65,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -326,7 +326,7 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId28",
@@ -336,7 +336,7 @@
             "Name": "textStatLeftMean",
             "X": 67,
             "Y": 222,
-            "Width": 10,
+            "Width": 65,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -355,7 +355,7 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId29",
@@ -365,7 +365,7 @@
             "Name": "textStatLeftStd",
             "X": 67,
             "Y": 242,
-            "Width": 10,
+            "Width": 65,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -384,7 +384,7 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId25",
@@ -394,7 +394,7 @@
             "Name": "textStatRightMin",
             "X": 142,
             "Y": 182,
-            "Width": 10,
+            "Width": 65,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -413,7 +413,7 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId24",
@@ -423,7 +423,7 @@
             "Name": "textStatRightMax",
             "X": 142,
             "Y": 202,
-            "Width": 10,
+            "Width": 65,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -442,7 +442,7 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId23",
@@ -452,7 +452,7 @@
             "Name": "textStatRightMean",
             "X": 142,
             "Y": 222,
-            "Width": 10,
+            "Width": 65,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -481,7 +481,7 @@
             "Name": "textStatRightStd",
             "X": 142,
             "Y": 242,
-            "Width": 57,
+            "Width": 65,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
