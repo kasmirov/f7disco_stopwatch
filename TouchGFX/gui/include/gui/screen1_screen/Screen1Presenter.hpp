@@ -29,8 +29,6 @@ public:
 
     virtual void startTimer();
     virtual void stopTimer();
-    virtual void touchLeftBtnClicked();
-    virtual void touchRightBtnClicked();
 
     virtual void timeMeasureReceived(int dir, float time);
     virtual void leftPositionReached(bool state);

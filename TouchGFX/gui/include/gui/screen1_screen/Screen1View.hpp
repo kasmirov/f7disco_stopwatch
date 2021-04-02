@@ -15,12 +15,11 @@ public:
 
     virtual void startBtnClicked();
     virtual void stopBtnClicked();
-    virtual void leftBtnClicked();
-    virtual void rightBtnClicked();
 
     virtual void textCurDirUpdated(const char* dir);
     virtual void textCurTimerUpdated(float time);
     virtual void addToList(const char* dir, float time);
+    virtual void textUpdateStat(float l_min, float l_max, float l_mean, float l_stdev, float r_min, float r_max, float r_mean, float r_stdev);
 
 protected:
 

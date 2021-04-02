@@ -16,9 +16,6 @@ public:
     void tick();
     void startMeasure();
     void stopMeasure();
-    void touchLeftBtnClicked();
-    void touchRightBtnClicked();
-    void meas_taskEntry();
     
 protected:
     ModelListener* modelListener;

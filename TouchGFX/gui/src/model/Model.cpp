@@ -18,21 +18,10 @@ void Model::tick()
       // Work code
       DataStruct_t msg;
       
-      if (osMessageQueueGet(MsgQueue, &msg, NULL, 10U) == osOK)
+      if (osMessageQueueGet(MsgQueue, &msg, NULL, 50U) == osOK)
       {
           modelListener->timeMeasureReceived(msg.dir, msg.measure);          
       }
-#else
-      // Test code, remove later
-      static int i = 0;
-      static int j = 0;
-      if ((i % 60) == 0)
-      {
-              modelListener->timeMeasureReceived(j % 2, 1.012345f);
-              j++;
-      }
-
-      i++;
 #endif 
 }
 
@@ -46,10 +35,3 @@ void Model::stopMeasure()
   meas_state = MEAS_OFF;
 }
 
-void Model::touchLeftBtnClicked()
-{
-}
-
-void Model::touchRightBtnClicked()
-{
-}

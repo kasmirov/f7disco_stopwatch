@@ -54,7 +54,7 @@
             "Type": "ButtonWithLabel",
             "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
             "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
+            "Alpha": 100,
             "TextId": "SingleUseId2",
             "ReleasedColor": {
               "Red": 237,
@@ -127,7 +127,7 @@
               "BufferSize": 10
             },
             "Name": "textCurTimer",
-            "X": 77,
+            "X": 82,
             "Y": 124,
             "Width": 110,
             "Height": 25,
@@ -175,7 +175,7 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea1",
-            "X": 4,
+            "X": 12,
             "Y": 182,
             "Width": 35,
             "Height": 20,
@@ -199,7 +199,7 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea1_1",
-            "X": 4,
+            "X": 12,
             "Y": 202,
             "Width": 40,
             "Height": 20,
@@ -223,7 +223,7 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea1_2",
-            "X": 4,
+            "X": 12,
             "Y": 222,
             "Width": 50,
             "Height": 20,
@@ -247,7 +247,7 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea1_3",
-            "X": 4,
+            "X": 12,
             "Y": 242,
             "Width": 34,
             "Height": 20,
@@ -491,104 +491,6 @@
             "Moveable": false
           },
           {
-            "Type": "FlexButton",
-            "Alpha": 255,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
-            },
-            "ButtonStyles": [
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "X": 0,
-                "Y": 0,
-                "Width": 60,
-                "Height": 40,
-                "LockToFlexButtonSize": true,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Red": 0,
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorPressed": {
-                  "Red": 0,
-                  "Green": 153,
-                  "Blue": 204
-                },
-                "ColorBorderReleased": {
-                  "Red": 0,
-                  "Green": 51,
-                  "Blue": 102
-                },
-                "ColorBorderPressed": {
-                  "Red": 51,
-                  "Green": 102,
-                  "Blue": 153
-                }
-              }
-            ],
-            "Name": "leftButton",
-            "X": 230,
-            "Y": 232,
-            "Width": 60,
-            "Height": 40,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "FlexButton",
-            "Alpha": 255,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
-            },
-            "ButtonStyles": [
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "X": 0,
-                "Y": 0,
-                "Width": 60,
-                "Height": 40,
-                "LockToFlexButtonSize": true,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Red": 0,
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorPressed": {
-                  "Red": 0,
-                  "Green": 153,
-                  "Blue": 204
-                },
-                "ColorBorderReleased": {
-                  "Red": 0,
-                  "Green": 51,
-                  "Blue": 102
-                },
-                "ColorBorderPressed": {
-                  "Red": 51,
-                  "Green": 102,
-                  "Blue": 153
-                }
-              }
-            ],
-            "Name": "rightButton",
-            "X": 420,
-            "Y": 232,
-            "Width": 60,
-            "Height": 40,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "Type": "ScrollList",
             "PaddingBefore": 0,
             "PaddingAfter": 0,
@@ -607,7 +509,7 @@
             "X": 230,
             "Y": 0,
             "Width": 250,
-            "Height": 232,
+            "Height": 272,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -639,30 +541,6 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "stopBtnClicked"
-            }
-          },
-          {
-            "InteractionName": "leftBtnClickedIter",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "leftButton"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "leftBtnClicked"
-            }
-          },
-          {
-            "InteractionName": "rightBtnClickedIter",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "rightButton"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "rightBtnClicked"
             }
           }
         ],

@@ -12,7 +12,6 @@
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/containers/buttons/Buttons.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
 #include <gui/containers/CustomContainer1.hpp>
 #include <touchgfx/mixins/ClickListener.hpp>
@@ -38,16 +37,6 @@ public:
     }
 
     virtual void stopBtnClicked()
-    {
-        // Override and implement this function in Screen1
-    }
-
-    virtual void leftBtnClicked()
-    {
-        // Override and implement this function in Screen1
-    }
-
-    virtual void rightBtnClicked()
     {
         // Override and implement this function in Screen1
     }
@@ -79,10 +68,8 @@ protected:
     touchgfx::TextAreaWithOneWildcard textStatRightMax;
     touchgfx::TextAreaWithOneWildcard textStatRightMean;
     touchgfx::TextAreaWithOneWildcard textStatRightStd;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > leftButton;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > rightButton;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<CustomContainer1, 11> scrollList1ListItems;
+    touchgfx::DrawableListItems<CustomContainer1, 10> scrollList1ListItems;
 
     /*
      * Wildcard Buffers
@@ -114,14 +101,12 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
-    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
     touchgfx::Callback<Screen1ViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
 
     /*
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
-    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
     void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
 
     /*
