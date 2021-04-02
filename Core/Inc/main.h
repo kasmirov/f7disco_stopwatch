@@ -62,6 +62,10 @@ void Error_Handler(void);
 #define LCD_BL_CTRL_GPIO_Port GPIOK
 #define LCD_DISP_Pin GPIO_PIN_12
 #define LCD_DISP_GPIO_Port GPIOI
+#define RIGHT_SENSOR_IN_Pin GPIO_PIN_10
+#define RIGHT_SENSOR_IN_GPIO_Port GPIOF
+#define LEFT_SENSOR_IN_Pin GPIO_PIN_0
+#define LEFT_SENSOR_IN_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

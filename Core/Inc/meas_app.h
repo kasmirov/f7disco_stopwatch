@@ -7,7 +7,9 @@ extern "C" {
 
 void Meas_Process();
 
- 
+int left_sensor();
+int right_sensor();
+
 #ifdef __cplusplus
 }
 #endif

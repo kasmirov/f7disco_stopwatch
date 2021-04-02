@@ -185,6 +185,7 @@ int main(void)
   /* Create the thread(s) */
   /* creation of TouchGFXTask */
   TouchGFXTaskHandle = osThreadNew(TouchGFX_Task, NULL, &TouchGFXTask_attributes);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   MeasTaskHandle = osThreadNew(Meas_Task, NULL, &MeasTask_attributes);
@@ -674,6 +675,18 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LCD_DISP_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : RIGHT_SENSOR_IN_Pin */
+  GPIO_InitStruct.Pin = RIGHT_SENSOR_IN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(RIGHT_SENSOR_IN_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : LEFT_SENSOR_IN_Pin */
+  GPIO_InitStruct.Pin = LEFT_SENSOR_IN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(LEFT_SENSOR_IN_GPIO_Port, &GPIO_InitStruct);
+
 }
 
 /* USER CODE BEGIN 4 */
@@ -689,6 +702,10 @@ void Meas_Task(void *argument)
     osDelay(1);   
   }
 }
+
+
+
+
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_TouchGFX_Task */
